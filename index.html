@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat Bot</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Chat Bot</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="chatbot-popup">
+  <div class="chatbot-popup">
     <div class="chat-header">
-        <div class="header-info">
-            <svg class="chatbot-logo"xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                <path d="M16.5 11h-9v2h9v-2z"/>
-            </svg>
-            <h2 class="logo-text">ChatMate </h2>
-        </div>
-        <button id="close-chatbot"
-           class="material-symbols-rounded">keyboard_arrow_down
-          </button>
+      <div class="header-info">
+        <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024"></svg>
+        <h2 class="logo-text">ChatMate</h2>
+      </div>
+      <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
     </div> 
+
     <div class="chat-body">
-        <div class="message-container">
-            <div class="message bot-message">
-                            <svg class ="bot-avatar"xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                <path d="M16.5 11h-9v2h9v-2z"/>
-            </svg>
-                
-                <div class="message-text">Hey there <br/> How can I assist you today?
-                </div>  
-            </div>
-            <div class ="message user-message">
-                <div class=" message-text">I wannn complete some assignment. Can I help you?
-                </div>
-            </div>
-            <div class="message bot-message"> 
-                <svg class ="bot-avatar"xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+      <div class="message bot-message">
+        <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024"></svg>
+        <div class="message-text">Hey there<br/>How can I assist you today?</div>  
+      </div>
 
-            </svg>
-            <div class="message-text">
-                <div class="thinking-indicator">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div> 
-                </div>
-            </div>
-        </div>
-   
+      <div class="message user-message">
+        <div class="message-text">I wannn complete some assignment. Can I help you?</div>
+      </div>
 
-            <div class="chat-footer">
-                <form action="#" class="chat-form">
-                    <textarea placeholder="Message..."
-                    class ="message-input"></textarea>
-                   <div class="chat-controls">
-                    <button type="button"
-                    class="material-symbols-rounded">Mood</button>
-                    <button type="button"
-                    class="material-symbols-rounded">image</button>
-                    <button type="submit"
-                    class="material-symbols-rounded">send</button>
-                     </div>
-                    </form>
-                </div>
+      <div class="message bot-message thinking"> 
+        <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+
+        </svg>
+        <div class="message-text">
+          <div class="thinking-indicator">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div> 
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <form action="#" class="chat-form">
+        <textarea placeholder="Message..." class="message-input"></textarea>
+        <div class="chat-controls">
+          <button type="button" class="material-symbols-rounded">mood</button>
+          <button type="button" class="material-symbols-rounded">image</button>
+          <button type="submit" class="material-symbols-rounded">send</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
